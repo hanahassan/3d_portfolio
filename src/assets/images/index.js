@@ -1,15 +1,17 @@
 import hero from './hero.jpg'
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
+import acr from './acr.png'
+import blockchain from './blockchain.png'
+import schulich from './schulich.png'
+import SSRT from './SSRT.png'
+import techstart from './techstart.png'
 import logo from './logo.svg'
 
 export {
     hero,
-    meta,
-    shopify,
-    starbucks,
-    tesla,
+    acr, 
+    blockchain, 
+    schulich, 
+    SSRT, 
+    techstart,
     logo
 }
