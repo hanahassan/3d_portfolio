@@ -194,3 +194,10 @@ body:has(.card[data-color="green"]:hover) {
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
 }
+
+.skill-text {
+  font-size: 0.875rem; /* Adjust font size as needed */
+  text-align: center;
+  word-wrap: break-word;
+  width: 80%; /* Adjust width as needed */
+}

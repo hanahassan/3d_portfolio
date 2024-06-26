@@ -23,9 +23,9 @@ const renderContent = {
         </h1>    ),
     2: (
         <InfoBox 
-        text = "I'm currently in my third year of Software Engineering. I am a part of Schulich Space Rover Team as a controls member, and conducting research in Blockchain technology."
+        text = "I'm currently a third year Software Engineering, and part of Schulich Space Rover Team and Blockchain Society. I am also conducting research in Decentralized Finance."
         link = "/about"
-        btnText="Learn More"
+        btnText="Click to Learn More"
         />
     ),
     3: (

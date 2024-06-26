@@ -3,19 +3,16 @@ import { skills, experiences } from '../constants';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import CTA from '../components/CTA';
-import Modal from '../components/Modal';
 
 const About = () => {
-  const [modalVisible, setModalVisible] = useState(false);
-  const [modalContent, setModalContent] = useState({ name: '', type: '' });
+  const [hoveredSkill, setHoveredSkill] = useState(null);
 
-  const handleSkillClick = (skill) => {
-    setModalContent({ name: skill.name, type: skill.type, imageUrl: skill.imageUrl });
-    setModalVisible(true);
+  const handleMouseEnter = (skill) => {
+    setHoveredSkill(skill.name);
   };
 
-  const closeModal = () => {
-    setModalVisible(false);
+  const handleMouseLeave = () => {
+    setHoveredSkill(null);
   };
 
   return (
@@ -25,21 +22,32 @@ const About = () => {
       </h1>
 
       <div>
-        <p className="mt-5 flex-col gap-3 text-slate-500">Software Engineer based in Canada, in my third year at the University of Calgary </p>
+        <p className="mt-5 flex-col gap-3 text-slate-500">
+          Software Engineer based in Canada, in my third year at the University of Calgary.
+        </p>
       </div>
 
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">My Skills</h3>
         <div className="mt-16 flex flex-wrap gap-12">
           {skills.map((skill) => (
-            <div className="block-container w-20 h-20" key={skill.name} onClick={() => handleSkillClick(skill)}>
-              <div className="btn-back rounded-xl"/>
-              <div className="btn-front rounded-x1 flex justify-center items-center">
-                <img
-                  src={skill.imageUrl}
-                  alt={skill.name}
-                  className="w-1/2 h-1/2 object-contain"
-                />
+            <div
+              className="block-container w-20 h-20 relative"
+              key={skill.name}
+              onMouseEnter={() => handleMouseEnter(skill)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className="btn-back rounded-xl" />
+              <div className="btn-front rounded-xl flex justify-center items-center transition-all duration-300">
+                {hoveredSkill === skill.name ? (
+                  <span className="skill-text">{skill.name}</span>
+                ) : (
+                  <img
+                    src={skill.imageUrl}
+                    alt={skill.name}
+                    className="skill-image w-1/2 h-1/2 object-contain transition-opacity duration-300"
+                  />
+                )}
               </div>
             </div>
           ))}
@@ -49,7 +57,9 @@ const About = () => {
       <div className="py-16">
         <h3 className="subhead-text">Experience</h3>
         <div>
-          <p className="mt-5 flex-col gap-3 text-slate-500">I've participated in multiple clubs and have been conducting research over the years. Here's the rundown: </p>
+          <p className="mt-5 flex-col gap-3 text-slate-500">
+            I've participated in multiple clubs and have been conducting research over the years. Here's the rundown:
+          </p>
         </div>
         <div className="mt-12 flex">
           <VerticalTimeline>
@@ -57,13 +67,15 @@ const About = () => {
               <VerticalTimelineElement
                 key={experience.company_name}
                 date={experience.date}
-                icon={<div className="flex justify-center items-center w-full h-full">
-                  <img
-                    src={experience.icon}
-                    alt={experience.company_name}
-                    className="w-[60%] h-[60%] object-contain"
-                  />
-                </div>}
+                icon={
+                  <div className="flex justify-center items-center w-full h-full">
+                    <img
+                      src={experience.icon}
+                      alt={experience.company_name}
+                      className="w-[60%] h-[60%] object-contain"
+                    />
+                  </div>
+                }
                 iconStyle={{ background: experience.iconBg }}
                 contentStyle={{
                   borderBottom: '8px',
@@ -82,8 +94,10 @@ const About = () => {
                 </div>
                 <ul className="my-5 list-disc ml-5 space-y-2">
                   {experience.points.map((point, index) => (
-                    <li key={`experience-point-${index}`}
-                      className="text-black-500/50 font-normal pl-1 text-sm">
+                    <li
+                      key={`experience-point-${index}`}
+                      className="text-black-500/50 font-normal pl-1 text-sm"
+                    >
                       {point}
                     </li>
                   ))}
@@ -95,8 +109,6 @@ const About = () => {
       </div>
       <hr className="border-slate-200" />
       <CTA />
-
-      <Modal show={modalVisible} onClose={closeModal} content={modalContent} />
     </section>
   );
 }
