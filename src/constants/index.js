@@ -272,30 +272,30 @@ export const socialLinks = [
     {
         name: 'LinkedIn',
         iconUrl: linkedin,
-        link: 'www.linkedin.com/in/hanahassan0',
+        link: 'https://linkedin.com/in/hanahassan0',
     }
 ];
 
 export const projects = [
     {
+        iconUrl: summiz,
+        theme: 'btn-back-pink',
+        name: 'Google Chrome Game Extension',
+        description: '• Developing software using Unity with C# to create a side-scrolling interactive game with a penguin attempting to avoid obstacles.<br />• Working in a cross-functional team using GitHub while creating multiple games to combine into one Chrome extension.',
+        link: 'https://github.com/techstartucalgary/techstarcade',
+    },
+    {
         iconUrl: disaster,
         theme: 'btn-back-red',
         name: 'Disaster Relief Service',
         description: '• Designed and implemented a disaster relief management system in Java, including modules for managing disaster victims, relief workers, and medical records.<br />• Utilized object-oriented programming principles and relational database integration to ensure efficient data handling and user-friendly interface.<br />• Created and optimized an SQL database to enhance data retrieval and storage efficiency.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        link: 'https://github.com/hanahassan/Disaster-Relief-Service',
     },
     {
         iconUrl: plane,
         theme: 'btn-back-blue',
         name: 'Airline Information Management System',
         description: '• Developed a robust airline reservation system using advanced C++ features such as polymorphism and inheritance, while applying object-oriented programming principles to design modular classes enhancing code maintainability and scalability.<br />• Implemented file handling techniques for data persistence, enabling seamless storage and retrieval of information.lining the car-buying process.',
-        link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
-    },
-    {
-        iconUrl: summiz,
-        theme: 'btn-back-pink',
-        name: 'Google Chrome Game Extension',
-        description: '• Developing software using Unity with C# to create a side-scrolling interactive game with a penguin attempting to avoid obstacles.<br />• Working in a cross-functional team using GitHub while creating multiple games to combine into one Chrome extension.',
-        link: 'https://github.com/adrianhajdin/social_media_app',
+        link: 'https://github.com/hanahassan/Airline-Information-Management-System',
     },
 ];
