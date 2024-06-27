@@ -62,7 +62,7 @@ const Contact = () => {
   };
   
   return (
-   <section className="relative flex lg:flex-row flex-col max-container h-[100vh]">
+    <section className="relative flex lg:flex-row flex-col max-container-contact h-[90vh] items-center justify-center">
     {alert.show && <Alert {...alert} />}
     <div className="flex-1 min-w-[50] flex flex-col">
       <h1 className="head-text "> Get in touch</h1>
@@ -124,6 +124,7 @@ const Contact = () => {
           </button>
         </form>
     </div>
+    <div className="lg:w-1/2 w-full lg:h-[650px] md:h-[550px] h-[40vh] " style={{ maxHeight: '40vh', overflow: 'auto' }}>
       <Canvas
         camera={{
           position: [0, 0, 5],
@@ -142,6 +143,7 @@ const Contact = () => {
             />
           </Suspense>
       </Canvas>
+    </div>
    </section>
   )
 }
