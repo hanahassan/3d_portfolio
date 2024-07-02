@@ -230,7 +230,7 @@ body:has(.card[data-color="green"]:hover) {
 
 @media (max-width: 950px) {
   .arrow-container {
-    top: 90%; /* Adjust the position if needed */
+    top: 85%; /* Adjust the position if needed */
     transform: translate(-50%, -85%); /* Adjust the transformation if needed */
     width: 50%; /* Example size adjustment */
     height: auto; /* Maintain aspect ratio */
