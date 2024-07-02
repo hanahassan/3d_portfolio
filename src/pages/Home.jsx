@@ -1,4 +1,4 @@
-import { useState, Suspense } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { Canvas, extend } from '@react-three/fiber';
 import Loader from '../components/Loader';
 import HomeInfo from '../components/HomeInfo';
@@ -9,6 +9,27 @@ import Plane from '../models/Plane';
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
+  const [showArrow, setShowArrow] = useState(false);
+
+  useEffect(() => {
+    let timer;
+    
+    const handleSpinTimeout = () => {
+      timer = setTimeout(() => {
+        setShowArrow(true);
+      }, 4000); // Adjusted timeout to 8 seconds
+    };
+
+    handleSpinTimeout();
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (isRotating) {
+      setShowArrow(false); // Hide the arrow when the screen starts rotating
+    }
+  }, [isRotating]);
 
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
@@ -72,6 +93,15 @@ const Home = () => {
           />
         </Suspense>
       </Canvas>
+
+      {showArrow && !isRotating && (
+        <div className="arrow-container">
+          <div className="arrow">↻</div>
+          <div className="arrow-box">
+            <div className="arrow-text">Spin the screen to explore the island!</div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
