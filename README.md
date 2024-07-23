@@ -13,5 +13,5 @@ I also designed and optimized the user interface (UI) with responsive layouts en
 For any inquiries or collaborations, feel free to reach out to me at:
 
 - **Email:** [hana0hassan0@gmail.com](mailto:hana0hassan0@gmail.com)
-- **LinkedIn:** [Hana Hassan](www.linkedin.com/in/hanahassan0/)
+- **LinkedIn:** [Hana Hassan](https://www.linkedin.com/in/hanahassan0/)
 - **Portfolio Website:** [Click here to view my portfolio!](https://hanahassan.netlify.app)
