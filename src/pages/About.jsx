@@ -23,7 +23,7 @@ const About = () => {
 
       <div>
         <p className="mt-5 flex-col gap-3 text-slate-500">
-          Software Engineer based in Canada, in my third year at the University of Calgary.
+          a Software Engineer based in Canada, in my third year at the University of Calgary. I'm interesed in AI, finance, blockchain, robotics, and web development. I'm always looking for unique experiences to learn new things!
         </p>
       </div>
 
