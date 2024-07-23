@@ -9,6 +9,7 @@ import redux from './redux.svg'
 import tailwindcss from './tailwindcss.svg'
 import summiz from './summiz.svg'
 import linkedin from './linkedin.svg'
+import resumeicon from './resumeicon.svg'
 import c from './c.svg'
 import arrow from './arrow.svg'
 import contact from './contact.svg'
@@ -72,5 +73,6 @@ export {
     unity,
     vscode,
     plane,
-    disaster
+    disaster,
+    resumeicon
 }

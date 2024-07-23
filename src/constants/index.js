@@ -8,6 +8,7 @@ import {
     html,
     javascript,
     linkedin,
+    resumeicon,
     nodejs,
     react,
     redux,
@@ -269,7 +270,12 @@ export const socialLinks = [
         name: 'LinkedIn',
         iconUrl: linkedin,
         link: 'https://linkedin.com/in/hanahassan0',
-    }
+    },
+    {
+        name: 'Resume',
+        iconUrl: resumeicon,
+        link: '/resume',
+    },
 ];
 
 export const projects = [
