@@ -24,5 +24,5 @@ This repository is licensed under the MIT License. See the [LICENSE](LICENSE) fi
 For any inquiries or collaborations, feel free to reach out to me at:
 
 - **Email:** [hana0hassan0@gmail.com](mailto:hana0hassan0@gmail.com)
-- **LinkedIn:** [your-linkedin-profile](www.linkedin.com/in/hanahassan0/)
-- **Portfolio Website:** [your-portfolio-website.com](https://hanahassan.netlify.app)
+- **LinkedIn:** [Hana Hassan](www.linkedin.com/in/hanahassan0/)
+- **Portfolio Website:** [Click here to view my portfolio!](https://hanahassan.netlify.app)
