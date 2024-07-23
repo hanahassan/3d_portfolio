@@ -17,7 +17,7 @@ const Home = () => {
     const handleSpinTimeout = () => {
       timer = setTimeout(() => {
         setShowArrow(true);
-      }, 4000); // Adjusted timeout to 8 seconds
+      }, 7000); 
     };
 
     handleSpinTimeout();
