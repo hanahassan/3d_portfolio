@@ -8,6 +8,7 @@ import react from './react.svg'
 import redux from './redux.svg'
 import tailwindcss from './tailwindcss.svg'
 import summiz from './summiz.svg'
+import boxes from './boxes.svg'
 import linkedin from './linkedin.svg'
 import resumeicon from './resumeicon.svg'
 import c from './c.svg'
@@ -63,6 +64,7 @@ export {
     jupyter,
     latex,
     summiz,
+    boxes,
     linux,
     moveit,
     mysql,

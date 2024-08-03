@@ -13,6 +13,7 @@ import {
     react,
     redux,
     summiz,
+    boxes,
     tailwindcss,
     c,
     clickhouse,
@@ -280,6 +281,13 @@ export const socialLinks = [
 
 export const projects = [
     {
+        iconUrl: boxes,
+        theme: 'btn-back-orange',
+        name: 'Inventory Tracker',
+        description: '• Developed a full-stack inventory tracking system using Next.js, Firebase, and Material-UI, showcasing proficiency in modern web technologies.<br />• Implemented real-time data management and user authentication with Firebase, ensuring secure and efficient handling of inventory information.<br />• Deployed the application on Vercel, demonstrating capability in deploying and maintaining production-ready web applications. Check out the link in the README.md file on the github.',
+        link: 'https://github.com/hanahassan/inventory_tracker.git',
+    },
+    {
         iconUrl: summiz,
         theme: 'btn-back-pink',
         name: 'Google Chrome Game Extension',
@@ -287,17 +295,17 @@ export const projects = [
         link: 'https://github.com/techstartucalgary/techstarcade',
     },
     {
-        iconUrl: disaster,
-        theme: 'btn-back-red',
-        name: 'Disaster Relief Service',
-        description: '• Designed and implemented a disaster relief management system in Java, including modules for managing disaster victims, relief workers, and medical records.<br />• Utilized object-oriented programming principles and relational database integration to ensure efficient data handling and user-friendly interface.<br />• Created and optimized an SQL database to enhance data retrieval and storage efficiency.',
-        link: 'https://github.com/hanahassan/Disaster-Relief-Service',
-    },
-    {
         iconUrl: plane,
         theme: 'btn-back-blue',
         name: 'Airline Information Management System',
         description: '• Developed a robust airline reservation system using advanced C++ features such as polymorphism and inheritance, while applying object-oriented programming principles to design modular classes enhancing code maintainability and scalability.<br />• Implemented file handling techniques for data persistence, enabling seamless storage and retrieval of information.lining the car-buying process.',
         link: 'https://github.com/hanahassan/Airline-Information-Management-System',
+    },
+    {
+        iconUrl: disaster,
+        theme: 'btn-back-red',
+        name: 'Disaster Relief Service',
+        description: '• Designed and implemented a disaster relief management system in Java, including modules for managing disaster victims, relief workers, and medical records.<br />• Utilized object-oriented programming principles and relational database integration to ensure efficient data handling and user-friendly interface.<br />• Created and optimized an SQL database to enhance data retrieval and storage efficiency.',
+        link: 'https://github.com/hanahassan/Disaster-Relief-Service',
     },
 ];
